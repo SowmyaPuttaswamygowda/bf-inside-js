@@ -31,7 +31,7 @@
   5 - repeat
 
 */
-
+debugger;
 let hello = 'world';
 console.assert(hello === 'world', 'hello should be "world"');
 

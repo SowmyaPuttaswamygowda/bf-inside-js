@@ -1,6 +1,6 @@
 'use strict';
 
-/* Devtool Breakpoints
+ /*Devtool Breakpoints
 
   breakpoints will also pause your code on a specific line
   but they are part of your devtools, not the source code
@@ -14,15 +14,20 @@
   here's a nice intro: https://www.youtube.com/watch?v=H0XScE08hy8
 
   Hint: try using the `run` and `debug` buttons, what's the difference?
-    what happens to your breakpoints when you close your tab and open it again?
+    what happens to your breakpoints when you close your tab and open it again?*/
 
-*/
 
-const firstName = 'Brobes';
+
+/*const firstName = 'Brobes';
 
 const lastName = 'Pierre';
 
 // use a breakpoint on line this line to pause before fullName's value is assigned
 const fullName = firstName + ' ' + lastName;
 
-console.assert(fullName === 'Brobes Pierre');
+console.assert(fullName === 'Brobes Pierre');*/
+
+//string
+ const firstName = 'SOWMYA';
+
+console.log(firstName.toLowerCase());

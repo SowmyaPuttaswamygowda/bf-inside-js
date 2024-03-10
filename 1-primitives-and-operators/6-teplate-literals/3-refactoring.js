@@ -14,7 +14,7 @@ console.log('-- begin --');
     the indentation you see in the source of the template is the indentation you see in the value
 
 */
-
+debugger;
 const myName = 'roboto';
 const myHomeTown = 'brussels';
 const myDog = 'Pete';
