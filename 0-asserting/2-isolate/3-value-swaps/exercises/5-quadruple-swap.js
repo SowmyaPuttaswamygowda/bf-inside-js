@@ -5,7 +5,7 @@
 console.log('-- begin --');
 
 // --- declare and initialize variables ---
-
+debugger;
 let a = 'y';
 let b = 'w';
 let c = 'z';
@@ -13,6 +13,13 @@ let d = 'x';
 let temp;
 
 // --- swap values ---
+
+temp = a;
+a = b;
+b = d;
+d = c;
+c = temp;
+
 
 // --- test final values ---
 
@@ -24,6 +31,6 @@ console.assert(c === 'y', 'Test 3');
 
 console.assert(d === 'z', 'Test 4');
 
-console.assert(temp === _, 'Test 5');
+console.assert(temp === 'y', 'Test 5');
 
 console.log('-- end --');
