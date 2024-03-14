@@ -6,9 +6,9 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
 // two different arrays with different values
 //  how many solutions can you find?
 // psst.  use JS Tutor & the debugger
-
-const array1 = _;
-const array2 = _;
+let num =10
+const array1 = [1,2,4];
+const array2 = ['x','y','z'];
 
 const test1 = array1 !== array2;
 console.assert(test1, 'Test 1');
