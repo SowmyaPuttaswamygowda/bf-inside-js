@@ -21,7 +21,8 @@ const color = 'red';
 
 for (const character of color) {
   console.log(character);
-  // character = 'hello!'; // will throw an error
+  //character = 'hello!'; // will throw an error
+   
 }
 
 // for...of with `let`

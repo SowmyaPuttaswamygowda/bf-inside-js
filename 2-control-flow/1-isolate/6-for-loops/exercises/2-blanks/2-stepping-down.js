@@ -22,17 +22,18 @@ console.log('-- begin --');
 */
 
 const holiday = 'winter solstice';
-const message = '_' + holiday;
+const message = '' + holiday;
 
 let tweet = '';
-for (let daysToHoliday = 14; _; _) {
-  tweet = daysToHoliday + message;
+for (let daysToHoliday = 14;daysToHoliday >= 1 ; daysToHoliday-- ) {
+  //tweet = daysToHoliday + message;
+  let tweet = daysToHoliday +'days remaining until '+ holiday;// Construct tweet message';
   console.log(tweet);
 }
 
 console.assert(
   tweet === '1 days remaining until winter solstice',
-  'there are 0 days remaining',
+ 'Expected: ! day remaining until winter solstice,butgot: ' + tweet,
 );
 
 const finalTweet = 'today is ' + holiday + '!';
