@@ -1,6 +1,8 @@
 // #todo
 
-'use strict';
+'use strict'
+
+debugger;
 
 console.log('-- begin --');
 
@@ -13,18 +15,14 @@ console.log('-- begin --');
 */
 
 const originalString = 'abcde';
-console.log('originalString:', originalString);
+console.log('originalStcrinog:', originalString);
 
 let reversedString = '';
 
-for (_; _; _) {
-  const nextLetter = _;
-  reversedString = _;
+ for (let i = originalString.length - 1; i >= 0; i--) {
+        originalString += originalString[i];
 
-  console.log(_); // your stepper variable
-  console.log('reversedString:', reversedString);
-}
-
+ }
 console.assert(
   reversedString === 'edcba',
   'reversed string is the original reversed',

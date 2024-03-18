@@ -18,18 +18,19 @@ console.log('-- begin --');
 
 */
 
-const holiday = 'winter solstice';
+  const holiday = 'winter solstice';
 const message = ' days remaining until ' + holiday;
 
 /* declare and assign the stepper variable
   this stepper is used to count down the days to a holiday
 */
 let daysRemaining = 14;
-while (_) {
+while (dayRemaining > 0) {
   const tweet = daysRemaining + message;
+  
   console.log(tweet);
 
-  daysRemaining = _;
+  daysRemaining --;
 }
 
 const finalTweet = 'today is ' + holiday + '!';
