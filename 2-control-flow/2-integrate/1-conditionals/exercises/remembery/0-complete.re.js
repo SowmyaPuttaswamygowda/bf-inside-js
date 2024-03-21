@@ -24,7 +24,7 @@ while (input3 === '' || input3 === null) {
 
 alert('all saved! get ready to remember');
 
-const randomPhraseNumber = Math.ceil(Math.random() * 3);
+const randomPhraseNumber = Math.floor(Math.random() * 3) + 1;
 
 const phraseToGuess =
   randomPhraseNumber === 1

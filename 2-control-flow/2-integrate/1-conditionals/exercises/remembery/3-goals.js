@@ -41,5 +41,9 @@ if (randomFrom1To3 === 1) {
 }
 
 /* -- BEGIN: check if the user was correct and let them know -- */
-
+if (attempt === correctAnswer) {
+  alert('Congratulations! You guessed correctly. The correct phrase was: ' + correctAnswer);
+} else {
+  alert('Sorry, your guess was incorrect. The correct phrase was: ' + correctAnswer);
+}
 /* -- END: check if the user was correct and let them know -- */

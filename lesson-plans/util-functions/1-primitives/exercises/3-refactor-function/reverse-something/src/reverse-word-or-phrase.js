@@ -6,8 +6,9 @@ import {
 
 import { reverse } from './utils/reverse.js';
 
+debugger;
 const reverseWordOrPhrase = () => {
-  debugger;
+  
 
   // --- read user input ---
   const userText = readString('user-text');
@@ -35,7 +36,7 @@ const reverseWordOrPhrase = () => {
     reversed = newWords.join(' ');
   } else {
     /// BEGIN: refactor this to call `reverse`
-    // reversed = reverse(__);
+     reversed = reverse(userText);
 
     let reversedText = '';
     for (const char of userText) {
@@ -48,5 +49,7 @@ const reverseWordOrPhrase = () => {
   // --- display the reversed input ---
   display('reversed-output', reversed);
 };
+
+document.getElementById('do-it').addEventListener('click', reverseWordOrPhrase);
 
 document.getElementById('do-it').addEventListener('click', reverseWordOrPhrase);

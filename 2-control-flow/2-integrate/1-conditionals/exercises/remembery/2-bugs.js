@@ -8,7 +8,7 @@
   - checking different random numbers instead of the same one
 
 */
-
+debugger;
 const instructions =
   'Remembery, the game of remembering.\n\n' +
   'You will be prompted to enter 3 phrases.\n' +
@@ -20,13 +20,13 @@ let input1 = null;
 let input2 = null;
 let input3 = null;
 
-while (input1 !== '' && input1 !== null) {
+while (input1 === '' && input1 === null) {
   input1 = prompt('enter your first secret phrase:');
 }
-while (input1 !== '' && input1 !== null) {
+while (input1 === '' && input2 === null) {
   input2 = prompt('enter your second secret phrase:');
 }
-while (input1 !== '' && input1 !== null) {
+while (input1 === '' && input3 === null) {
   input3 = prompt('enter your third secret phrase:');
 }
 
@@ -44,10 +44,11 @@ if (Math.ceil(Math.random() * 3) === 1) {
   phraseToGuess = option1;
 }
 
+
 const guessIsCorrect = phraseToGuess === userGuess;
 
-const gameResult = guessMessage
+const gameResult = guessIsCorrect
   ? 'correct! phrase ' + randomFrom1To3 + ' was "' + phraseToGuess + '"'
   : 'nope :(';
 
-alert(guessIsCorrect);
+alert(gameResult);
