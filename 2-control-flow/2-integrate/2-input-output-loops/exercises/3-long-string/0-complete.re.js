@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 let userInput = '';
 let isTooShort = true;
 while (isTooShort) {
