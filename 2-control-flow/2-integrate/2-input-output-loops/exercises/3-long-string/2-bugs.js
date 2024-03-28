@@ -10,20 +10,25 @@
   - assignment vs. comparison
 
 */
-
-const userInput = '';
-const isLongEnough = false;
+debugger;
+let userInput = '';
+let isLongEnough = true;
 while (isLongEnough) {
-  userInput = prompt('enter anything longer than 5 characters');
+ userInput = prompt('enter anything longer than 5 characters');
+  console.log('userInput:',typeof userInput, userInput);
 
-  if (userInput !== null || userInput !== '') {
+  if (userInput === null || userInput === '') {
     alert('that is nothing');
-  } else if ((userInput.length = 5)) {
+    continue;
+
+  } else if ((userInput.length <= 5)) {
     alert('too short');
-  } else {
-    isLongEnough === true;
+    continue;
+
+  } 
+    isLongEnough = false;
   }
-}
+
 
 const finalMessage =
   '"' + userInput + '" is ' + userInput.length + ' characters long';

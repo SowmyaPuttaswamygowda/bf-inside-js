@@ -15,7 +15,7 @@ let isValid = false;
 while (!isValid) {
   const userInput = prompt('enter anything with "e" or "E" as the 5th letter');
 
-  if ((userInput = null || userInput === '')) {
+  if ((userInput === null || userInput === '')) {
     alert('that is nothing');
   } else if (userInput.length > 5) {
     alert('too short');

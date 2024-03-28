@@ -9,20 +9,24 @@
   - which interaction functions are used
 
 */
-
+debugger;
 let userInput = '';
-let userConfirmed = false;
-while (userConfirmed) {
+while (true) {
   userInput = prompt('enter your name:');
   console.log('userInput:', typeof userInput, userInput);
 
-  if (userInput === false) {
+  if (userInput === null || userInput === '' ) {
     alert('nothing is not a name');
     continue;
   }
 
   const confirmMessage = 'is this correct?\n"' + userInput + '"';
-  userConfirmed = alert(confirmMessage);
+   const userDidConfirm= confirm(confirmMessage);
+   console.log('userDidConfirm:',typeof userDidConfirm,userDidConfirm);
+
+   if (userDidConfirm){
+    break;
+   }
 }
 
 const finalMessage = `your name is: "${userInput}"`;

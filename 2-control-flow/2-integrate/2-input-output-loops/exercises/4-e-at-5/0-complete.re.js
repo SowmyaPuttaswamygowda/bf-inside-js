@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 let validInput = '';
 while (true) {
   const userInput = prompt('enter anything with "e" or "E" as the 5th letter');

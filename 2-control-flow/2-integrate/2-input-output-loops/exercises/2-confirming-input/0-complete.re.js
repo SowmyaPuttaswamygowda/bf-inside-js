@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 let userInput = '';
 while (true) {
   userInput = prompt('enter your name:');
@@ -17,7 +17,7 @@ while (true) {
   console.log('userDidConfirm:', typeof userDidConfirm, userDidConfirm);
 
   if (userDidConfirm) {
-    break;
+    break
   }
 }
 
