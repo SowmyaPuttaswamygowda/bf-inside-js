@@ -7,27 +7,38 @@
   - unnecessary variable declarations
 
 */
-
+debugger;
 let userInput = '';
 let unicodeShift = NaN;
 
-while (true) {
-  const userInput = prompt(
+let userConfirmed = false;
+while (!userConfirmed) {
+   userInput = prompt(
     'enter a phrase, each character will be shifted by character code:',
   );
+   console.log('userInput:', typeof userInput, userInput);
 
   if (userInput === '' || userInput === null) {
     alert('nope, enter something');
-  } else {
+    continue;
+  } 
     while (true) {
       const unicodeShiftInput = prompt(
         'how many unicode numbers do you want the characters to shift?',
       );
+      console.log(
+      'unicodeShiftInput:',
+      typeof unicodeShiftInput,
+      unicodeShiftInput,
+    );
 
       if (unicodeShiftInput === null || unicodeShiftInput === '') {
         alert('enter something');
-      } else {
-        const unicodeShift = Number(unicodeShiftInput);
+        continue;
+      }
+      /* convert their string to a number */
+    unicodeShift = Number(unicodeShiftInput);
+    console.log('unicodeShift:', typeof unicodeShift, unicodeShift);
 
         if (Number.isNaN(unicodeShift)) {
           alert('"' + unicodeShiftInput + '" is not a number');
@@ -35,15 +46,12 @@ while (true) {
           break;
         }
       }
-    }
+    
     const confirmMessage =
       'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + unicodeShift;
-    const confirmation = confirm(confirmMessage);
-    if (confirmation) {
-      break;
-    }
+    userConfirmed = confirm(confirmMessage);
+    
   }
-}
 
 let encodedString = '';
 

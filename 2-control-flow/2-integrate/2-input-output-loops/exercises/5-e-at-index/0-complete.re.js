@@ -11,8 +11,8 @@ while (true) {
   const userInput = prompt(
     `enter anything with "e" or "E" as the ${index}th letter`,
   );
-  console.log('userInput:', typeof userInput, userInput);
-
+  //console.log('userInput:', typeof userInput, userInput);
+  
   // make sure the user entered something
   if (userInput === null || userInput === '') {
     alert('that is nothing');

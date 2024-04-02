@@ -1,27 +1,29 @@
 // #todo
 
 'use strict';
-
+debugger;
 let userInput = '';
 let repetitions = NaN;
-while (_) {
+while (true) {
   /* gather a string from the user */
   userInput = prompt('enter a phrase to repeat:');
+  console.log('userInput:', typeof userInput,userInput);
 
   /* make sure the user input something */
-  if (_) {
+  if (userInput === '' || userInput === null) {
     alert('nope, enter something');
     continue;
   }
 
   /* ask the user for a number */
   const repetitionsInput = prompt('how many times do you want to repeat it?');
-
+  console.log('repetitionsInput:', typeof repetitionsInput,repetitionsInput);
   /* convert their string to a number */
   repetitions = Number(repetitionsInput);
+  console.log('repetitions:',typeof repetitionsInput,repetitionsInput);
 
   /* make sure the user input a valid number */
-  if (_) {
+  if (Number.isNaN(repetitions)) {
     alert('"' + repetitionsInput + '" is not a number');
     continue;
   }
@@ -38,9 +40,11 @@ while (_) {
 let repeatedInput = '';
 
 /* repeat the user input `repetitions` number of times */
-for (_; _; _) {
-  repeatedInput = _;
+for (let i = 0; i< repetitions; i++) {
+  repeatedInput += userInput;
 }
+
+console.log('repeatedInput:', typeof repeatedInput,repeatedInput);
 
 const finalMessage = `"${userInput}" -> "${repeatedInput}"`;
 alert(finalMessage);

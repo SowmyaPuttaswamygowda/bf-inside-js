@@ -1,7 +1,7 @@
 // #todo
 
 'use strict';
-
+debugger;
 const instructions =
   'calculate the sum of many numbers:\n\n' +
   '- you must input something\n' +
