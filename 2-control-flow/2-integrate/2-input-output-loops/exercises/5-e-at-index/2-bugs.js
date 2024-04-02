@@ -14,7 +14,7 @@ let validInput = '';
 
 let index = 0;
 while (true) {
-  index = index * 1;
+  index = index + 1;
 
   const userInput = prompt(
     `enter anything with "e" or "E" as the ${index}th letter`,
@@ -27,7 +27,7 @@ while (true) {
   }
 
   // make sure it is long enough to have an "e" in the 5th letter
-  if (userInput.length < index) {
+  if (userInput.length < 5) {
     alert('too short');
     break;
   }

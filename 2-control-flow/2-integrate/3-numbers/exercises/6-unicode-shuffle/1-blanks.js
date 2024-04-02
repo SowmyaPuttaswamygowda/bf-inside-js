@@ -6,17 +6,18 @@ let userInput = '';
 let unicodeShift = NaN;
 
 let userConfirmed = false;
-while (_) {
+while (!userConfirmed) {
   userInput = prompt(
     'enter a phrase, each character will be shifted by character code:',
   );
+  console.log('userInput:', typeof userInput, userInput);
 
   if (userInput === '' || userInput === null) {
     alert('nope, enter something');
     continue;
   }
 
-  while (_) {
+  while (true) {
     const unicodeShiftInput = prompt(
       'how many unicode numbers do you want the characters to shift?',
     );
@@ -26,9 +27,10 @@ while (_) {
       continue;
     }
 
-    _ = Number(unicodeShiftInput);
+    unicodeShift = Number(unicodeShiftInput);
+    console.log('unicodeshift:', typeof unicodeShift, unicodeShift);
 
-    if (_) {
+    if (Number.isNaN(unicodeShift)) {
       alert('"' + unicodeShiftInput + '" is not a number');
     } else {
       break;
@@ -36,17 +38,19 @@ while (_) {
   }
   const confirmMessage =
     'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + unicodeShift;
-  _ = confirm(confirmMessage);
+  userConfirmed = confirm(confirmMessage);
 }
 
 let encodedString = '';
 
 for (const character of userInput) {
-  const characterCode = character._();
+  const characterCode = character.charCodeAt();
   const newCharCode = characterCode + unicodeShift;
-  const encodedCharacter = String._(newCharCode);
+  const encodedCharacter = String.fromCharCode(newCharCode);
   encodedString += encodedCharacter;
 }
+
+console.log('encodedString:', typeof encodedString, encodedString);
 
 const finalMessage = `"${userInput}" -> "${encodedString}"`;
 alert(finalMessage);

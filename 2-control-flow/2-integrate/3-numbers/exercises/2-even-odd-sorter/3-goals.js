@@ -3,12 +3,31 @@
 'use strict';
 
 let userNumber = NaN;
-while (true) {
+let userNumberIsNaN = true;
+while (userNumberIsNaN) {
   const userInput = prompt('enter a number');
+  console.log('userInput:',typeof userInput, userInput);
 
-  /* -- BEGIN: exit if userInput is a valid number -- */
-  /* -- END -- */
+  if(userInput === ''|| userInput === null) {
+    alert('enter somthing');
+    continue;
+  }
+
+  userNumber = Number(userInput);
+  console.log('userNumber:',typeof userNumber,userNumber);
+
+  if(Number.isNaN(userNumber)) {
+    alert('"' + userInput + '" is not a number');
+  }else {
+    userNumberIsNaN = false;
+  }
 }
 
-const message = userNumber % 2 === 0 ? ' is even' : ' is odd';
-alert(userNumber + message);
+if(userNumber % 2 === 0) {
+  const evenMessage = userNumber + ' is even';
+  alert(evenMessage);
+}else{
+
+const oddMessage = userNumber  +' is odd';
+alert(oddMessage);
+}
