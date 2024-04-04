@@ -18,7 +18,7 @@ console.log('-- begin --');
 // if the answer to both functions is "no", it's not a pure function
 
 // which of these are pure functions?
-
+debugger;
 const a = () => {
   return x + y;
 };
