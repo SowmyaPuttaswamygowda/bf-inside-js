@@ -38,6 +38,7 @@ console.log('-- begin --');
 
   it returns a string: the initial string repeated
 */
+debugger;
 const repeater = (stringParam = '', numberParam = 0) => {
   console.log('stringParam:', typeof stringParam, stringParam);
   console.log('numberParam:', typeof numberParam, numberParam);

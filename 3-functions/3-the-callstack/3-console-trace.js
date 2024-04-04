@@ -8,7 +8,7 @@
     it also logs the current call stack
 
 */
-
+debugger;
 let callStackRoot = 0;
 
 const func1 = (depth) => {
