@@ -4,11 +4,17 @@
 
 /**
  * ___
- * @param {string} [text=''] - ___
- * @param {number} [repeats=_] - ___
- * @returns {string} ___
+ * @param {string} [text=''] - the text to repeat
+ * @param {number} [repeats=_] - number of times to repeat
+ * @returns {string} the repeated string
  */
-__;
+const repeat = (text = '', repeats = 1) => {
+  let repeated = '';
+  for (let i = 0; i < repeat;i++) {
+    repeat += text;
+  }
+  return repeated;
+};
 
 describe('repeater: repeats a string a specific number of times', () => {
   it('can repeat a string once', () => {

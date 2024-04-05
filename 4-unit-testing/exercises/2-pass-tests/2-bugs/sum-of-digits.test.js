@@ -11,12 +11,13 @@
  */
 const sumOfDigits = (toSum = 0) => {
   const digitsToSum = String(toSum);
+  const onlyDigits = stringedNumber.replaceAll('.', '').replaceAll('-', '');
   let sum = 0;
-  for (const character of digitsToSum) {
+  for (const character of onlyDigits) {
     const digit = Number(character);
-    if (Number.isNaN(digit)) {
-      sum += sum + digit;
-    }
+   
+      sum +=  + digit;
+    
   }
 
   return toSum > 0 ? sum : sum;

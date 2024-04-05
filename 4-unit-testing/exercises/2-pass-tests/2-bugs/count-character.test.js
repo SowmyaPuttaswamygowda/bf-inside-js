@@ -10,16 +10,17 @@
  * @returns {number} How many times the character appears in the text.
  */
 const countCharacter = (text = '', toCount = '') => {
-  let count = -1;
-  if (toCount.length !== 1) {
-    return count;
+  let count = 0;
+  if (toCount.length === 1) {
+    for (const character of text) {
+      if (character === toCount) {
+        count++;
+      }
+    }
+  } else {
+    count = -1;
   }
-
-  count++;
-  for (let character of text) {
-    count = character = toCount ? count : count + 1;
-  }
-  return count;
+ return count;
 };
 
 describe('countCharacter: how many times a specific character appears in a string.', () => {
