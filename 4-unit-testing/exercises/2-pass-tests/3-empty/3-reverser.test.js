@@ -3,9 +3,13 @@
 'use strict';
 
 /**
- *
+ *Reverse a string
+ * @param {string} str -the string to reverse
+ * @returns {string} - the reversed string
  */
-__;
+const reverser = (str = '') => {
+  return str.split('').reverse().join('');
+};
 
 describe('reverser: reverses a string', () => {
   it('reverses one letter', () => {
