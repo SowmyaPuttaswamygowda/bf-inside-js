@@ -1,7 +1,12 @@
 import { readString, display } from '../../../lib/dom-io.js';
 
-import { _ } from './utils/_.js';
+import {creatPyramid} from './utils/pyramid.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById("pyramid-it").addEventListener('click', () => {
   debugger;
+  //get user input
+  const text = readString('to-pyramid');
+  const pyramid = creatPyramid(text);
+
+  display('pyramided',pyramid);
 });
