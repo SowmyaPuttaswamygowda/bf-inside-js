@@ -1,12 +1,12 @@
-import { typeOfValue } from './type-of-value.js';
+import {typeOfValue} from './type-of-value.js';
 
 describe('the function returns the type of any value', () => {
   describe('"string"', () => {
     it('empty string -> "string"', () => {
-      expect(typeOfValue('')).toEqual('string');
+      expect(typeOfValue('').toEqual('string');
     });
     it('a short string -> "string"', () => {
-      expect(typeOfValue('toads')).toEqual('string');
+      expect(typeOfValue('toads').toEqual('string');
     });
     it('a long string -> "string"', () => {
       const longString = 'aiugn0923gonh dc987rz8xbs1';
