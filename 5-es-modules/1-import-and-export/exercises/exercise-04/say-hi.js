@@ -2,4 +2,6 @@
 
 debugger;
 
-const sayHi = __;
+const sayHi = (name) => {
+  return  `hello,${name}!`;
+};
