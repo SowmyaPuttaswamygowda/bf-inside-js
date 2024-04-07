@@ -3,7 +3,7 @@
 // comparing arrays with === is based on reference
 // comparisons are true when they reference the same array in memory
 // psst. JS Tutor will help a lot with this example
-
+debugger;
 // this comparison is false!
 const notTheSame1 = [1, 2, 3];
 const notTheSame2 = [1, 2, 3];

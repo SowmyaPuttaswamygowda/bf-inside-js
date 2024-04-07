@@ -4,7 +4,7 @@
 //  assigning a primitive to a other variable makes a copy of it
 //  modifying the other variable does not change the old 1
 // PS. JS Tutor will be very helpful with this
-
+debugger;
 let primitive1 = 5;
 let primitive2 = primitive1;
 primitive2 += 1;

@@ -16,7 +16,7 @@ console.log('-- begin --');
   can you figure out how to get the same logs using a for...of loop?
 
 */
-
+debugger;
 const trees = ['birch', 'larch', 'oak', 'maple'];
 console.log(trees);
 

@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-// import { __ } from '../utils/__.js';
+ import {average} from '../utils/average-of-numbers.js';
 
 /* ===== main program (use functions) ===== */
 
